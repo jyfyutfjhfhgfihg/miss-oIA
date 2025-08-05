@@ -1,0 +1,1 @@
+counst caixaPrincipal = document.querySelector(". caixa-princial");
