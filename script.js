@@ -6,38 +6,48 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Pergunta 1",
+        enunciado: "Qual o principal sonho do Luffy?",
         alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
+            "Se tornar o Rei dos Piratas",
+            "Morar em uma ilha deserta"
         ]
     },
     {
-        enunciado: "Pergunta 2",
+        enunciado: "Qual a habilidade principal do Luffy?",
         alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
+            "Controlar o fogo",
+            "Deixar o corpo elástico"
         ]
     },
     {
-        enunciado: "Pergunta 3",
+        enunciado: "Quem é o espadachim do bando?",
         alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
+            "Um pirata com três espadas",
+            "Um ninja invisível"
         ]
     },
     {
-        enunciado: "Pergunta 4",
+        enunciado: "Qual o nome do navio do grupo?",
         alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
+            "Um navio de madeira comum",
+            "O Going Merry"
         ]
     },
     {
-        enunciado: "Pergunta 5",
+        enunciado: "Onde o tesouro One Piece está escondido?",
         alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
+            "No mar de Grand Line",
+            "Em uma ilha do céu"
         ]
     }
 ];
+
+let atual = 0;
+let PerguntaAtual; 
+
+function mostraPergunta(){
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = PerguntaAtual.enunciado;
+}
+
+mostraPergunta();
